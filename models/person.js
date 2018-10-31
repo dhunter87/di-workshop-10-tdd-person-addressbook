@@ -1,17 +1,13 @@
 // Your Person class goes here!
 class Person{
-    condtructor(fullName,age){
-        this.fullName = fullName
-        this.age = age 
-
+    constructor(fullName,age){
+        this.fullName = fullName;
+        this.age = age;
+        console.log(this.fullName);
     }
     displayInfo(){
-        var lines = [
-            this.fullname,
-            this.age
-        ] 
-        return lines.join('\n')
+        console.log(this.fullName+"\n"+this.age);
     }
 }
 
-module.exports = Person
+module.exports = Person;
